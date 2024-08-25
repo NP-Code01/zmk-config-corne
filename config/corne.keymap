@@ -32,7 +32,7 @@
 // | BTCLR | BT1 | BT2 | BT3 | BT4 |   |     | UP  |     |     | BKSP  |
 // |  BT5  |     |     |     |     |   | LFT | DWN | RGT |     |       |
 //               | GUI |     | SPC |   | SHFT |    | ENT |
-//               |& CTRL|              |& TAB |
+//               |& CTRL|              |& TAB |    |& ALT|
                         bindings = <
    &none &kp N1       &kp N2       &kp N3       &kp N4   &kp N5              &kp N6   &kp N7   &kp N8  &kp N9    &kp N0 &none
    &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &trans &kp UP &trans &trans &kp BSPC &none
@@ -45,13 +45,13 @@
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
 // |  ;  |  '  |  `  |  _  | "|" |   |  -  |  =  |  [  |  ]  | BKSP|
-// |  ~  |  /  |  \  |  <  |  >  |   |  +  |  {  |  }  |     |     |
+// |  ~  |  /  |  \  |  <  |  >  |   |  +  |  {  |  }  |  ?  |     |
 //             | GUI |     | SPC |   | SHFT |     | ENT |
-//             |& CTRL|              |& TAB |
+//             |& CTRL|              |& TAB |     |& ALT|
                         bindings = <
    &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT            &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
    &none &kp SEMI   &kp SQT &kp GRAVE   &kp UNDER  &kp PIPE     &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSPC &none
-   &none &kp TILDE   &kp FSLH &kp BSLH  &trans  &trans       &kp PLUS &kp LBRC  &kp RBRC  &trans  &trans &none 
+   &none &kp TILDE   &kp FSLH &kp BSLH  &kp LT  &kp GT       &kp PLUS &kp LBRC  &kp RBRC  &trans  &kp QMARK &none 
           &mt LCTRL LGUI &trans   &kp SPACE               &mt RSHFT TAB   &trans    &kp RET
                         >;
                 };
