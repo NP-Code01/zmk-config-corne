@@ -16,7 +16,7 @@
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |   |   Y  |  U   |  I  |  O  |   P   |
 // |  A  |  S  |  D  |  F  |  G  |   |   H  |  J   |  K  |  L  |  BKSP | 
-// |  Z  |  X  |  C  |  V  |  B  |   |   N  |  M   |  ,  |  .  |  ESC  |  
+// |  Z  |  X  |  C  |  V  |  B  |   |   N  |  M   |  ,  |  .  |  ESC  |  shift makes , < and . >
 //             | GUI | RSE | SPC |   | SHFT | LWR  | ENT |
 //             |& CTRL|              |& TAB |      |& ALT|
                         bindings = <
@@ -45,13 +45,13 @@
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
 // |  ;  |  '  |  `  |  _  | "|" |   |  -  |  =  |  [  |  ]  | BKSP|
-// |  ~  |  /  |  \  |  <  |  >  |   |  +  |  {  |  }  |  :  |  ?  |
+// |  ~  |  /  |  \  |  "  |     |   |  +  |  {  |  }  |  :  |  ?  |
 //             | GUI |     | SPC |   | SHFT |     | ENT |
 //             |& CTRL|              |& TAB |     |& ALT|
                         bindings = <
    &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT            &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
    &none &kp SEMI   &kp SQT &kp GRAVE   &kp UNDER  &kp PIPE     &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSPC &none
-   &none &kp TILDE   &kp FSLH &kp BSLH  &kp LT  &kp GT       &kp PLUS &kp LBRC  &kp RBRC  &kp COLON  &kp QMARK &none 
+   &none &kp TILDE   &kp FSLH &kp BSLH  &kp DQT  &trans       &kp PLUS &kp LBRC  &kp RBRC  &kp COLON  &kp QMARK &none 
           &mt LCTRL LGUI &trans   &kp SPACE               &mt RSHFT TAB   &trans    &mt RALT RET
                         >;
                 };
